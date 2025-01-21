@@ -167,7 +167,7 @@ main {
   z-index: 1;
 }
 
-.item_container:hover {
+img.item_img:hover {
   .hover_pic {
     display: inline;
   }
