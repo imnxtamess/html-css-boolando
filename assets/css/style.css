@@ -150,6 +150,9 @@ main {
 .item_info {
   flex-direction: column;
   gap: 0.2rem;
+  a {
+    color: var(--bool-dark);
+  }
 }
 
 .heart {
@@ -160,6 +163,10 @@ main {
   padding: 1rem;
   z-index: 10;
   transform: translate(-50%);
+}
+
+.heart:hover {
+  color: var(--bool-sale);
 }
 
 .hover_pic {
