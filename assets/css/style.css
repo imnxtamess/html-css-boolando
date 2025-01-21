@@ -129,6 +129,7 @@ main {
   max-width: 75%;
   margin: auto;
   padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .item {
@@ -173,5 +174,51 @@ main {
 .item:hover {
   .hover_pic {
     display: inline;
+  }
+}
+
+/*Main Finish*/
+
+/*Footer Start*/
+
+footer {
+  background-color: var(--bool-dark);
+  color: var(--bool-lighter);
+  padding: 3rem 16rem;
+  flex-direction: row;
+  justify-content: space-between;
+  .lfooter {
+    flex-direction: column;
+    gap: 0.5rem;
+    .legal-links {
+      gap: 0.5rem;
+      a {
+        font-weight: lighter;
+        color: var(--bool-lighter);
+        font-weight: normal;
+      }
+    }
+    h1 {
+      font-size: 1.4rem;
+    }
+  }
+  .rfooter {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    h2 {
+      font-size: 1rem;
+    }
+    .socials {
+      gap: 0.5rem;
+    }
+    a {
+      color: var(--bool-dark);
+    }
+    i {
+      background-color: var(--bool-lighter);
+      padding: 3px;
+      border-radius: 5px;
+    }
   }
 }
