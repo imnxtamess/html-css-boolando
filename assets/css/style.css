@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
 
 :root {
@@ -34,13 +35,23 @@ body {
 }
 
 .item_discount,
-.item_tags {
-  padding: 0.3rem;
+.item_tag {
+  padding: 0.4rem;
   color: var(--bool-lighter);
+  font-weight: 600;
+}
+
+.first_tag {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  top: 80%;
+  left: 0px;
+  z-index: 1;
+}
+
+.second_tag {
+  position: absolute;
+  top: 80%;
+  left: 60px;
   z-index: 1;
 }
 
@@ -52,6 +63,27 @@ body {
   background-color: var(--bool-sale);
 }
 
+.relative {
+  position: relative;
+}
+
+.disc_price {
+  color: var(--bool-sale);
+  font-weight: 600;
+}
+
+.og_price {
+  text-decoration: line-through;
+  padding-left: 0.5rem;
+}
+
+strong {
+  text-transform: uppercase;
+}
+
+p {
+  text-transform: capitalize;
+}
 /*Utilities*/
 
 /*Header Start*/
@@ -110,6 +142,17 @@ main {
   z-index: 0;
 }
 
-.one {
-  position: relative;
+.item_info {
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.heart {
+  position: absolute;
+  bottom: 90%;
+  left: 95%;
+  background-color: var(--bool-lighter);
+  padding: 1rem;
+  z-index: 1;
+  transform: translate(-50%);
 }
