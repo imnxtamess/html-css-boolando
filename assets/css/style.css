@@ -131,14 +131,18 @@ main {
   padding-top: 4rem;
 }
 
+.item {
+  width: 30%;
+}
+
 .item_container {
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .item_img {
-  max-height: 640px;
-  max-width: 924px;
+  max-width: 100%;
   z-index: 0;
 }
 
@@ -158,8 +162,7 @@ main {
 }
 
 .hover_pic {
-  max-height: 640px;
-  max-width: 924px;
+  max-width: 100%;
   display: none;
   position: absolute;
   top: 0px;
@@ -167,7 +170,7 @@ main {
   z-index: 1;
 }
 
-img.item_img:hover {
+.item:hover {
   .hover_pic {
     display: inline;
   }
