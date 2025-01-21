@@ -45,14 +45,14 @@ body {
   position: absolute;
   top: 80%;
   left: 0px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .second_tag {
   position: absolute;
   top: 80%;
   left: 60px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .item_tag {
@@ -153,6 +153,22 @@ main {
   left: 95%;
   background-color: var(--bool-lighter);
   padding: 1rem;
-  z-index: 1;
+  z-index: 10;
   transform: translate(-50%);
+}
+
+.hover_pic {
+  max-height: 640px;
+  max-width: 924px;
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+.item_container:hover {
+  .hover_pic {
+    display: inline;
+  }
 }
