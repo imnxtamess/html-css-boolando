@@ -94,9 +94,10 @@ header {
   z-index: 100;
   width: 100%;
   background-color: var(--bool-primary);
-  color: var(--bool-lighter);
+  color: var(--bool-dark);
   justify-content: space-around;
   padding: 1rem;
+  box-shadow: 0 0 10px gray;
   .nav1 {
     justify-content: space-around;
     align-items: center;
